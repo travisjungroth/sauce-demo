@@ -11,7 +11,7 @@ import pytest
                          ]
                          )
 def test_name_form(driver, name):
-    min_length = 12
+    min_length = 0
     driver.get('http://localhost:5000/')
     driver.find_element_by_id('name').send_keys(name)
     driver.find_element_by_id('submit').click()
